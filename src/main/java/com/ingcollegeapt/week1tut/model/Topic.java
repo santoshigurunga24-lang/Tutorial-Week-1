@@ -1,11 +1,10 @@
 package com.ingcollegeapt.week1tut.model;
 
+//Create a POJO Class for Topic
+
 import java.time.LocalDateTime;
 
 
-
-
-//Create a POJO Class for Topic
 /*
 It has id, name, created and updated TimeStamp
 */
@@ -21,7 +20,7 @@ public class Topic {
     public Topic(int topicID, String name) {
         this.topicID = topicID;
         this.name = name;
-        this.createdAt = LocalDataTime.now();
+        this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
         
     }
@@ -32,7 +31,7 @@ public class Topic {
 
     public void setTopicID(int topicID) {
         this.topicID = topicID;
-        this.updatedAt = LocalDataTime.now();//update te timestamp whenever the topic id is change
+        this.updatedAt = LocalDateTime.now();//update te timestamp whenever the topic id is change
     }
 
     public String getName() {
@@ -41,7 +40,7 @@ public class Topic {
 
     public void setName(String name) {
         this.name = name;
-        this.updatedAt = LocalDataTime.now();
+        this.updatedAt = LocalDateTime.now();
     }
 
     public LocalDateTime getCreatedAt() {
@@ -51,18 +50,4 @@ public class Topic {
     public LocalDateTime getUpdatedAt() {
         return updatedAt;
     }
-
-    public String getTopicId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getTopicName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
- 
-    
-    
 }
-    
-
